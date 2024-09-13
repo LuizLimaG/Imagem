@@ -21,7 +21,7 @@ const App = () => {
     formData.append('profileImage', selectedImage);
 
     try {
-      const response = await axios.post('https://server-imagem.vercel.app/upload', formData, {
+      const response = await axios.post('http://localhost:5000/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
